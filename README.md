@@ -11,7 +11,7 @@ Evaluación del rendimiento y la rentabilidad de dos campañas de marketing digi
 El equipo de marketing invirtió $10,000 USD adicionales en una nueva campaña ("Test") con el objetivo de generar mayor tráfico web. El propósito de este análisis es determinar matemáticamente si este aumento de tráfico se tradujo en una mejora estadísticamente significativa en la **Tasa de Conversión (CR)** frente a la campaña original ("Control").
 
 ## Reporte Ejecutivo y Resultados Estadísticos
-*(Inserta aquí la captura de pantalla de tu Excel: `![Resultados del A/B Test](ab_test_results.png)`)*
+![Resultados del A/B Test](ab_test_results.jpeg)
 
 ## Hallazgos y Recomendación Estratégica
 Tras analizar el comportamiento de más de 335,000 visitantes web, los datos revelaron lo siguiente:
