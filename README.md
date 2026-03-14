@@ -1,32 +1,32 @@
-# Análisis A/B Testing & ROI: Rentabilidad de Campañas Digitales
+# A/B Testing & ROI Analysis: Digital Campaign Profitability
 
-## Resumen Ejecutivo
-Evaluación del rendimiento y la rentabilidad de dos campañas de marketing digital (Control vs. Test) para determinar, mediante validación estadística, si la nueva estrategia de adquisición justifica su incremento de presupuesto.
+## Executive Summary
+Evaluating the performance and profitability of two digital marketing campaigns (Control vs. Test) to mathematically determine, via statistical validation, if a new acquisition strategy justifies its increased budget.
 
-## Stack Tecnológico
-* **SQL:** Extracción, limpieza y agregación de datos transaccionales.
-* **Excel Avanzado:** Análisis estadístico (Prueba Z de dos proporciones, Valor P), modelado financiero y reportes de negocio.
+## Tech Stack
+* **SQL:** Transactional data extraction, cleaning, and aggregation.
+* **Advanced Excel:** Statistical analysis (Two-Proportion Z-Test, P-Value), financial modeling, and business reporting.
 
-## El Problema de Negocio
-El equipo de marketing invirtió $10,000 USD adicionales en una nueva campaña ("Test") con el objetivo de generar mayor tráfico web. El propósito de este análisis es determinar matemáticamente si este aumento de tráfico se tradujo en una mejora estadísticamente significativa en la **Tasa de Conversión (CR)** frente a la campaña original ("Control").
+## The Business Problem
+The marketing team invested an additional $10,000 into a new "Test" campaign aimed at driving higher website traffic. The purpose of this analysis is to mathematically determine if this traffic surge translated into a statistically significant improvement in the **Conversion Rate (CR)** compared to the original "Control" campaign.
 
-## Reporte Ejecutivo y Resultados Estadísticos
-![Resultados del A/B Test](ab_test_results.jpeg)
+## Executive Dashboard & Statistical Results
+![A/B Test Results](ab_test_results.jpeg)
 
-## Hallazgos y Recomendación Estratégica
-Tras analizar el comportamiento de más de 335,000 visitantes web, los datos revelaron lo siguiente:
+## Key Findings & Strategic Recommendation
+After analyzing the behavior of over 335,000 website visitors, the data revealed the following:
 
-1. **Caída en Eficiencia:** A pesar de generar mayor volumen de tráfico, la campaña Test registró una tasa de conversión inferior (**8.64%**) en comparación con la campaña Control (**9.83%**).
-2. **Validación Estadística:** La prueba Z arrojó un Z-Score de **-11.83** y un P-Value de **< 0.001**, confirmando que la caída en el rendimiento es definitiva y no un evento producto del azar.
+1. **Drop in Efficiency:** Despite generating a higher volume of traffic, the Test campaign recorded a lower conversion rate (**8.64%**) compared to the Control campaign (**9.83%**).
+2. **Statistical Validation:** The Z-Test yielded a Z-Score of **-11.83** and a P-Value of **< 0.001**, confirming that the drop in performance is definitive and not a result of random variance.
 
-> **Decisión Ejecutiva:** Se recomienda **detener la campaña Test inmediatamente** para frenar la pérdida de capital. El presupuesto excedente debe ser reasignado a la campaña Control, la cual ha demostrado ser un canal de adquisición financieramente más estable y rentable.
+> **Executive Decision:** It is highly recommended to **halt the Test campaign immediately** to stop further capital loss. The surplus budget should be reallocated to the Control campaign, which has proven to be a financially stable and highly profitable acquisition channel.
 
-## Código de Extracción (SQL)
-Consulta estructurada para limpiar valores nulos y consolidar más de 60 líneas transaccionales en las métricas base utilizadas para la prueba estadística:
+## SQL Extraction Code
+Structured query used to clean null values and consolidate over 60 transactional records into the core metrics used for the statistical test:
 
 ```sql
--- Extracción de métricas clave para A/B Testing
--- Se filtran valores nulos para garantizar la integridad del análisis
+-- A/B Testing: Key Metrics Extraction
+-- Filtering null values to ensure data integrity and accuracy
 
 SELECT 
     'Control Campaign' AS Campaign_Group,
